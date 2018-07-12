@@ -3,11 +3,14 @@
  "-//Hibernate/Hibernate Mapping DTD//EN"
  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
 <hibernate-mapping>
-	<class name="com.domain.userInfo" table="Hibernatetest.userinfo">
+	<class name="com.domain.userInfo" table="userinfo" catalog="hibernatetest">
 
-		<id name="userId" column="userId" type="java.lang.Integer">
+		<id name="userId" type="java.lang.Integer">
+			<column name="userId" />
 			<generator class="native" />
 		</id>
-		<property name="password" column="password"  type="java.lang.String"/>
+		<property name="password" type="java.lang.String">
+			<column name="password"></column>
+		</property>
 	</class>
 </hibernate-mapping> 
