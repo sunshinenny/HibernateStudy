@@ -4,12 +4,12 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.testing.junit.*;
 
 import com.domain.userInfo;;
 
 public class Test {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		saveToDatabase();
 		// findFromDatabase();//success
 		// deleteDatabase();//success
@@ -17,7 +17,7 @@ public class Test {
 
 	static void saveToDatabase() {
 		userInfo user = new userInfo();
-		// user.setUserId(100);
+		user.setUserId(100);
 		user.setPassword("pleasePass");
 		// 1.初始化,读取配置文件
 		Configuration config = new Configuration().configure();
