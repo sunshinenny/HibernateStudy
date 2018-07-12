@@ -11,7 +11,7 @@ public class Test {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		userInfo user = new userInfo();
-		user.setId(1);
+		user.setUserId(100);
 		user.setPassword("pleasePass");
 		// 1.初始化,读取配置文件
 		Configuration config = new Configuration().configure();

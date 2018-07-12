@@ -16,7 +16,7 @@
 
 		<!-- 指定在控制台打印生成的Sql语句 -->
 		<property name="hibernate.show_sql">true</property>
-
+		<!-- <property name="hibernate.hbm2ddl.auto">validate</property> -->
 
 		<mapping resource="com/domain/userInfo.hbm.xml" />
 		<!-- 告诉Hibernate，Cat类是一个实体类，Hibernate将管理Cat与对应的数据库表 -->

@@ -1,14 +1,14 @@
 package com.domain;
 import java.io.Serializable;
 public class userInfo {
-	Integer id;
+	Integer userId;
 	String password;
 
-	public Integer getId() {
-		return id;
+	public Integer getUserId() {
+		return userId;
 	}
-	public void setId(Integer id) {
-		this.id = id;
+	public void setUserId(Integer userId) {
+		this.userId = userId;
 	}
 	public String getPassword() {
 		return password;
