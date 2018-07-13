@@ -5,11 +5,11 @@
 <hibernate-mapping>
 	<class name="com.domain.userInfo" table="userinfo" catalog="hibernatetest">
 
-		<id name="userId" type="java.lang.Integer">
+		<id name="userId" type="int">
 			<column name="userId" />
 			<generator class="native" />
 		</id>
-		<property name="password" type="java.lang.String">
+		<property name="password" type="string">
 			<column name="password"></column>
 		</property>
 	</class>
